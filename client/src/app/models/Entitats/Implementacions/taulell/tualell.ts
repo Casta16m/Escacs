@@ -21,9 +21,6 @@ export class taulell implements iTaulell {
 
         for (let i = 0; i < 8; i++) {
             this.matriu[i] = [];
-        }
-
-        for (let i = 0; i < 8; i++) {
             for (let j = 0; j < 8; j++) {
                 this.matriu[i][j] = new casella(
                     String.fromCharCode(65 + j - 1),
@@ -35,13 +32,21 @@ export class taulell implements iTaulell {
         }
     }
 
-    /* PosicionarPeces() {
+    PosicionarPeces() {
 
-        ImgPeces = new Array("/assets/bTorre", "/assets/bCavall", "/assets/"); // array de imagenes
+        let ImgPecesNegres = new Array("/assets/bTorre", "/assets/bCavall", "/assets/bAlfil", "/assets/bRei", "/assets/bReina", "/assets/bPeo"); // array de imagenes
+
+        let ImgPecesBlanques = new Array("/assets/wTorre", "/assets/wCavall", "/assets/wAlfil", "/assets/wRei", "/assets/wReina", "/assets/wPeo");
+
+        for (let i = 0; i < 8; i++) {
+            for (let j = 0; j < 8; j++) {
+                this.matriu[i][j] = new peça();
+            }
+        }
 
         // array de imagenes, y hacer lo mismo que en el de las casillas pero canviando pieza por lo necesario
 
         // posicions peces negres / blanques.
-    } */
+    }
 
 }
