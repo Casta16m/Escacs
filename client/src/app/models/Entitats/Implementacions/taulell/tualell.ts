@@ -38,11 +38,16 @@ export class taulell implements iTaulell {
 
         let ImgPecesBlanques = new Array("/assets/wTorre", "/assets/wCavall", "/assets/wAlfil", "/assets/wRei", "/assets/wReina", "/assets/wPeo");
 
-        for (let i = 0; i < 8; i++) {
-            for (let j = 0; j < 8; j++) {
-                this.matriu[i][j] = new peça;
-            }
-        }
+        /*         for (let i = 0; i < 8; i++) {
+                    for (let j = 0; j < 8; j++) {
+                        this.matriu[i][j] = new p(
+                            String.fromCharCode(65 + j - 1),
+                            i + 1,
+                            (i + j) % 2 == 0 ? "#2AD707" : "#A0A0A0",
+                            new peça("", "")
+                        );
+                    }
+                } */
 
         // array de imagenes, y hacer lo mismo que en el de las casillas pero canviando pieza por lo necesario
 
