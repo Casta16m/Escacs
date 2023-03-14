@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { EntrarEquipComponent } from './components/entrar-equip/entrar-equip.component';
 import { JugarComponent } from './components/jugar/jugar.component';
 import { TaulellComponent } from './components/taulell/taulell.component';
+import { RouterModule } from '@angular/router';
 const config: SocketIoConfig = { url: 'http://localhost:4444', options: {} };
 
 @NgModule({
@@ -20,7 +21,8 @@ const config: SocketIoConfig = { url: 'http://localhost:4444', options: {} };
     BrowserModule,
     FormsModule,
     SocketIoModule.forRoot(config),
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

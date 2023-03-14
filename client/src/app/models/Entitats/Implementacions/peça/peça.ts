@@ -1,13 +1,11 @@
 import { iPeça } from "../../Interficies/peça/iPeça";
 
 export class peça implements iPeça {
-    numero!: number;
-    color!: string;
-    tipus!: string;
+    color: string;
+    imatge: string;
 
-    constructor(numero: number, color: string, tipus: string) {
-        this.numero = numero;
+    constructor(color: string, imatge: string) {
         this.color = color;
-        this.tipus = tipus;
+        this.imatge = imatge;
     }
 }

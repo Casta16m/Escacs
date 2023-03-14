@@ -11,8 +11,6 @@ export class TaulellComponent {
   taulell: taulell;
 
   constructor() {
-    this.taulell = new taulell([], [], [], 1);
-    this.taulell.emplenarTaulell();
-
+    this.taulell = new taulell(1);
   }
 }

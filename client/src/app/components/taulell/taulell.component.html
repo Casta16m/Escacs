@@ -1,11 +1,9 @@
-<!-- <table>
-    <tr *ngFor="let fila of taulell.matriu">
-        <td *ngFor="let celda of fila" [ngClass]="{ 'blanco': celda == 0, 'negro': celda == 1 }"></td>
-    </tr>
-</table> -->
-
-<table>
-    <tr>
-
-    </tr>
-</table>
+<div class="taula1">
+    <table border="1" *ngFor="let fila of this.taulell.matriu" class="taulell">
+        <tr>
+            <td *ngFor="let casella of fila" [ngStyle]="{'background-color': casella.color} ">
+                {{casella.imatge}}{{casella.num}}
+            </td>
+        </tr>
+    </table>
+</div>
